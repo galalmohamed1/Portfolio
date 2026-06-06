@@ -5,7 +5,7 @@ import ecommerceCover from "@/assets/projects/ecommerce-cover.jpg";
 import freshcart from "@/assets/projects/freshcart-2.png";
 import facebookCover from "@/assets/projects/facebook-cover.jpg";
 import facebook2 from "@/assets/projects/facebook-2.png";
-import moviesCover from "@/assets/projects/movies-cover.jpg";
+import movies2 from "@/assets/projects/movies2.png";
 import weatherCover from "@/assets/projects/weather-cover.jpg";
 import editmediaCover from "@/assets/projects/editmedia-cover.jpg";
 
@@ -43,8 +43,8 @@ const PROJECTS: Project[] = [
     category: "Project · Entertainment",
     name: "Movies App",
     url: "https://movies-app-wine-psi.vercel.app/",
-    col1a: shot("https://movies-app-wine-psi.vercel.app/", 600, 800),
-    col2: moviesCover,
+    col1a: movies2,
+    col2: shot("https://movies-app-wine-psi.vercel.app/", 600, 800),
   },
   {
     n: "04",
