@@ -115,7 +115,7 @@ function Card({ p, index, total }: { p: Project; index: number; total: number })
                 src={p.col1a}
                 alt={`${p.name} preview 1`}
                 loading="lazy"
-                className="w-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
+                className="w-full h-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
                 style={{ height: "clamp(130px, 35vw, 430px)" }}
               />
             </div>
