@@ -4,6 +4,8 @@ import { MarqueeSection } from "@/components/portfolio/MarqueeSection";
 import { AboutSection } from "@/components/portfolio/AboutSection";
 import { ServicesSection } from "@/components/portfolio/ServicesSection";
 import { ProjectsSection } from "@/components/portfolio/ProjectsSection";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -55,6 +57,7 @@ function Index() {
             </li>
           ))}
         </ul>
+        
       </section>
 
       <footer
@@ -81,6 +84,36 @@ function Index() {
             WhatsApp · +20 100 304 4257
           </a>
         </div>
+          <div className="flex items-center gap-3">
+                    <a
+                      href="https://www.facebook.com/galal.mohamed.395669"
+                      target="_blank"
+                      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-blue-500 hover:text-white transition-colors"
+                    >
+                      <FaFacebookF />
+                    </a>
+                    <a
+                      href="https://github.com/galalmohamed1"
+                      target="_blank"
+                      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-black hover:text-white transition-colors"
+                    >
+                      <FaGithub />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/galalmohamed26?igsh=NnRkYXJvczlrYjI3&utm_source=qr"
+                      target="_blank"
+                      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-gradient-to-r from-yellow-500 to-purple-500 hover:text-white transition-colors"
+                    >
+                      <FaInstagram />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/galal-mohamed-b926b5225"
+                      target="_blank"
+                      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-blue-500 hover:text-white transition-colors"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  </div>
         <a
           href={CV_URL}
           target="_blank"

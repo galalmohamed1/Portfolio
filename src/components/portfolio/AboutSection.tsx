@@ -37,7 +37,7 @@ export function AboutSection() {
           </h2>
         </FadeIn>
         <AnimatedText
-          text="I'm Galal — a frontend and Flutter developer passionate about building fast, beautiful, and motion-driven digital products across web and mobile. Let's build something incredible together!"
+          text="I'm Galal, a frontend and Flutter developer crafting fast, beautiful, and motion-rich digital products for web and mobile. I build seamless user experiences that feel modern, responsive, and premium. Let's build something incredible together."
           className="font-medium text-center leading-relaxed max-w-140"
           style={{ color: "#D7E2EA", fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
         />
