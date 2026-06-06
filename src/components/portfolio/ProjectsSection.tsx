@@ -109,17 +109,19 @@ function Card({ p, index, total }: { p: Project; index: number; total: number })
               <LiveProjectButton />
             </a>
           </div>
-          <div className="flex flex-row gap-3 sm:gap-4 md:gap-5 flex-1 min-h-0">
-            <div className="flex flex-col gap-3 sm:gap-4 md:gap-5" style={{ width: "40%" }}>
+          <div
+            className="flex flex-row gap-3 sm:gap-4 md:gap-5 flex-1 min-h-0"
+            style={{ height: "clamp(130px, 35vw, 430px)" }}
+          >
+            <div className="w-1/2 sm:w-[40%]">
               <img
                 src={p.col1a}
                 alt={`${p.name} preview 1`}
                 loading="lazy"
                 className="w-full h-full object-cover rounded-[40px] sm:rounded-[50px] md:rounded-[60px]"
-                style={{ height: "clamp(130px, 35vw, 430px)" }}
               />
             </div>
-            <div style={{ width: "60%" }} className="flex-1">
+            <div className="w-1/2 sm:w-[60%]">
               <img
                 src={p.col2}
                 alt={`${p.name} full preview`}
