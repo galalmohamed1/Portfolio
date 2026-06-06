@@ -4,32 +4,8 @@ import { MarqueeSection } from "@/components/portfolio/MarqueeSection";
 import { AboutSection } from "@/components/portfolio/AboutSection";
 import { ServicesSection } from "@/components/portfolio/ServicesSection";
 import { ProjectsSection } from "@/components/portfolio/ProjectsSection";
-import cvAsset from "@/assets/galal-cv.pdf.asset.json";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Galal — Frontend Developer" },
-      {
-        name: "description",
-        content:
-          "Galal — Frontend developer building high-performance web experiences with React and Next.js.",
-      },
-      { property: "og:title", content: "Galal — Frontend Developer" },
-      {
-        property: "og:description",
-        content: "Frontend developer building high-performance web experiences.",
-      },
-    ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap",
-      },
-    ],
-  }),
   component: Index,
 });
 
@@ -40,6 +16,9 @@ const ALL_SITES: { name: string; url: string }[] = [
   { name: "Weather App", url: "https://weather-app-eight-orcin-14.vercel.app/" },
   { name: "Edit Media Studio", url: "https://edite-media-studio.vercel.app/" },
 ];
+
+const CV_URL =
+  "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a/v1/e0675c62-911f-4a19-98d7-81545b8a4068/684a6bb1-2720-4f78-be06-0783ff4494e8/Galal-Mohamed-CV.pdf";
 
 function Index() {
   return (
@@ -103,7 +82,7 @@ function Index() {
           </a>
         </div>
         <a
-          href={cvAsset.url}
+          href={CV_URL}
           target="_blank"
           rel="noopener noreferrer"
           download="Galal-Mohamed-CV.pdf"
