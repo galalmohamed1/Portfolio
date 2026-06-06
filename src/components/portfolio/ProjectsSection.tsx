@@ -34,7 +34,7 @@ const PROJECTS: Project[] = [
     n: "02",
     category: "Project · Social UI",
     name: "Facebook UI Clone",
-    url: "https://social-app-nine-orcin.vercel.app/auth",
+    url: "https://social-app-nine-orcin.vercel.app/",
     col1a: facebook2,
     col2: facebookCover,
   },
